@@ -76,7 +76,7 @@ class Garage:
 	def view_lot(self):
 		print "Spaces Available:"
 		for i in range(self.rows):
-			print "level: " + str(i) + ": " + "Motorcycle Spaces " + str(self.garage[i][0]) + " Compact Spaces "+ str(self.garage[i][1]) + " Large Spots " + str(self.garage[i][2])
+			print "Level " + str(i) + ": " + "Motorcycle Spaces " + str(self.garage[i][0]) + " Compact Spaces "+ str(self.garage[i][1]) + " Large Spots " + str(self.garage[i][2])
 
 
 
