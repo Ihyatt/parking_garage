@@ -9,13 +9,9 @@ class Garage:
 		self.capacity =(self.open_moto_spots + self.open_comp_spots + self.open_large_spots)
 		self.spaces_taken = 0 
 		self.garage = {}
-		self.populate_garage(moto_spots, comp_spots, large_spots)
-
-	def populate_garage(self, moto_spots, comp_spots, large_spots):
 
 		for i in range(self.rows):
 			self.garage[i] = [moto_spots, comp_spots, large_spots]
-
 
 
 	def park_vehicle(self, vehicle):
@@ -98,22 +94,46 @@ class Garage:
 
 if __name__ == '__main__':
 	lot = Garage(2, 2, 2 , 5)
-	print lot.view_lot()
-	print lot.park_vehicle("motorcycle")
+
+
 	print lot.park_vehicle("car")
 
-	print lot.park_vehicle("motorcycle")
 	print lot.park_vehicle("car")
 
-	print lot.park_vehicle("motorcycle")
+
 	print lot.park_vehicle("car")
 
-	print lot.park_vehicle("motorcycle")
+
 	print lot.park_vehicle("car")
 
-	print lot.park_vehicle("motorcycle")
+
 	print lot.park_vehicle("car")
 
+	print lot.park_vehicle("car")
+
+	print lot.park_vehicle("car")
+
+
+	print lot.park_vehicle("car")
+
+
+	print lot.park_vehicle("car")
+
+
+	print lot.park_vehicle("car")
+
+	print lot.park_vehicle("car")
+
+	print lot.park_vehicle("car")
+
+
+	print lot.park_vehicle("car")
+
+
+	print lot.park_vehicle("car")
+
+
+	print lot.park_vehicle("car")
 
 	print lot.view_lot()
 
