@@ -59,8 +59,8 @@ cd to the challange directory and type and enter 'python general_tests.py'
 
 Output to terminal: 
 
-----------------------------------------------------------------------
-Ran 1 test in 0.000s
+	----------------------------------------------------------------------
+	Ran 1 test in 0.000s
 
 OK
 
@@ -74,7 +74,7 @@ cd to the challange directory and type and enter 'python time_tests.py'
 
 Ouput to terminal: 
 
---- 4.05311584473e-06 seconds ---
+	--- 4.05311584473e-06 seconds ---
 
 
 #### <a name="setup"></a>Setup
