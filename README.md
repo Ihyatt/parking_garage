@@ -62,7 +62,7 @@ Output to terminal:
 	----------------------------------------------------------------------
 	Ran 1 test in 0.000s
 
-OK
+	OK
 
 
 #### <a name="time_tests.py"></a>time_tests.py
