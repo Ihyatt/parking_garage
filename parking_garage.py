@@ -10,11 +10,13 @@ class Garage:
 		self.spaces_taken = 0 
 		self.garage = {}
 
+		#data structure reperesentation of the Garage
 		for i in range(self.rows):
 			self.garage[i] = [moto_spots, comp_spots, large_spots]
 
 
 	def park_vehicle(self, vehicle):
+		#Public method to be called to park vehicle
 		if self.capacity == self.spaces_taken:
 			return vehicle + " cannot be parked in this garage."
 
@@ -29,6 +31,7 @@ class Garage:
 
 
 	def __find_moto_spots(self, vehicle):
+		#Private method to park motorcycle only
 		if self.open_moto_spots == 0:
 			return self.__find_comp_spots(vehicle)
 
@@ -45,6 +48,7 @@ class Garage:
 			return self.__find_comp_spots(vehicle)
 
 	def __find_comp_spots(self, vehicle):
+		#private method to park either motorcycle or car only
 		if self.open_comp_spots == 0:
 			return self.__find_large_spots(vehicle)
 
@@ -60,6 +64,7 @@ class Garage:
 			return self.__find_large_spots(vehicle)
 
 	def __find_large_spots(self, vehicle):
+		#Private method to park motorcycle, car or bus
 		if self.open_large_spots == 0: 
 			return vehicle + " will not fit in this garage."
 
@@ -88,7 +93,9 @@ class Garage:
 
 
 if __name__ == '__main__':
+	#Sample instanct of Garage
 	lot = Garage(2, 2, 2 , 5)
+	#Series of sample data to populate garage
 	print lot.park_vehicle("horse")
 	print lot.park_vehicle("motorcycle")
 	print lot.park_vehicle("car")
