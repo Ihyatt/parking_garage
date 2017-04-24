@@ -89,45 +89,17 @@ class Garage:
 
 if __name__ == '__main__':
 	lot = Garage(2, 2, 2 , 5)
-
-
-
+	print lot.park_vehicle("horse")
+	print lot.park_vehicle("motorcycle")
 	print lot.park_vehicle("car")
-
-
-	print lot.park_vehicle("car")
-
-
-	print lot.park_vehicle("car")
-
-
-	print lot.park_vehicle("car")
-
+	print lot.park_vehicle("bus")
 	print lot.park_vehicle("car")
 	print lot.park_vehicle("car")
-
+	print lot.park_vehicle("motorcycle")
+	print lot.park_vehicle("car")
+	print lot.park_vehicle("bus")
+	print lot.park_vehicle("motorcycle")
 	print lot.park_vehicle("car")
 
-
-	print lot.park_vehicle("car")
-
-
-	print lot.park_vehicle("car")
-
-
-	print lot.park_vehicle("car")
-
-	print lot.park_vehicle("car")
-
-	print lot.park_vehicle("car")
-
-
-	print lot.park_vehicle("car")
-
-
-	print lot.park_vehicle("car")
-
-
-	print lot.park_vehicle("car")
 
 
