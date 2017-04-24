@@ -19,18 +19,18 @@ class Garage:
 			return vehicle + " cannot be parked in this garage."
 
 		if vehicle == "motorcycle":
-			return self.find_moto_spots(vehicle)
+			return self.__find_moto_spots(vehicle)
 		elif vehicle == "car":
-			return self.find_comp_spots(vehicle)
+			return self.__find_comp_spots(vehicle)
 		elif vehicle == "bus":
-			return self.find_large_spots(vehicle)
+			return self.__find_large_spots(vehicle)
 		else:
 			return vehicle + " cannot be parked in this garage."
 
 
-	def find_moto_spots(self, vehicle):
+	def __find_moto_spots(self, vehicle):
 		if self.open_moto_spots == 0:
-			return self.find_comp_spots(vehicle)
+			return self.__find_comp_spots(vehicle)
 
 
 		parked = False
@@ -42,11 +42,11 @@ class Garage:
 				parked = True
 				return vehicle + " has been parked."
 		if parked == False:
-			return self.find_comp_spots(vehicle)
+			return self.__find_comp_spots(vehicle)
 
-	def find_comp_spots(self, vehicle):
+	def __find_comp_spots(self, vehicle):
 		if self.open_comp_spots == 0:
-			return self.find_large_spots(vehicle)
+			return self.__find_large_spots(vehicle)
 
 		parked = False
 		for i in range(self.rows):
@@ -57,9 +57,9 @@ class Garage:
 				parked = True
 				return vehicle + " has been parked."
 		if parked == False:
-			return self.find_large_spots(vehicle)
+			return self.__find_large_spots(vehicle)
 
-	def find_large_spots(self, vehicle):
+	def __find_large_spots(self, vehicle):
 		if self.open_large_spots == 0: 
 			return vehicle + " will not fit in this garage."
 
@@ -84,11 +84,6 @@ class Garage:
 			return vehicle + " will not fit in this garage."
 
 
-	def view_lot(self):
-		print "Spaces Available:"
-		for i in range(self.rows):
-			print "Level " + str(i) + ": " + "Motorcycle Spaces " + str(self.garage[i][0]) + " Compact Spaces "+ str(self.garage[i][1]) + " Large Spots " + str(self.garage[i][2])
-
 
 
 
@@ -96,6 +91,19 @@ if __name__ == '__main__':
 	lot = Garage(2, 2, 2 , 5)
 
 
+
+	print lot.park_vehicle("car")
+
+
+	print lot.park_vehicle("car")
+
+
+	print lot.park_vehicle("car")
+
+
+	print lot.park_vehicle("car")
+
+	print lot.park_vehicle("car")
 	print lot.park_vehicle("car")
 
 	print lot.park_vehicle("car")
@@ -121,20 +129,5 @@ if __name__ == '__main__':
 
 
 	print lot.park_vehicle("car")
-
-	print lot.park_vehicle("car")
-
-	print lot.park_vehicle("car")
-
-
-	print lot.park_vehicle("car")
-
-
-	print lot.park_vehicle("car")
-
-
-	print lot.park_vehicle("car")
-
-	print lot.view_lot()
 
 

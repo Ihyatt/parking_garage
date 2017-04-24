@@ -16,5 +16,5 @@ class TestTimeOnParkingGarage:
 
 
 if __name__ == '__main__':
-	t = TestTimeOnParkingGarage()
-	print t.check_time_park_vehicle()
+	time_test = TestTimeOnParkingGarage()
+	print time_test.check_time_park_vehicle()
