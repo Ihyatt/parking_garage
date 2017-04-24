@@ -37,6 +37,7 @@ Create an instance of of the Garage, ex. lot = Garage(2, 2, 2 , 5). Then add veh
 To run, while in the challenge directory and type and enter 'python parking_garage.py'
 
 Output to terminal: 
+
 	horse cannot be parked in this garage.
 	motorcycle has been parked.
 	car has been parked.
