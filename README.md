@@ -52,11 +52,29 @@ Output to terminal:
 
 
 #### <a name="general_tests.py"></a>general_tests.py
-Using unittest, I imported the parking_garage module and tested for the success and failures of my code looking specifically at the only public method, park_vehicle(). 
+Using unittest, I imported the parking_garage module and tested for the success and failures of my code looking specifically at the only public method, park_vehicle(). Within setUp(), you will notice self.test = parking_garage.Garage(2, 1, 1, 5). This is simply an instance of the Garage class that we are going to test on. 
+
+To Run:
+cd to the challange directory and type and enter 'python general_tests.py'
+
+Output to terminal: 
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
 
 
 #### <a name="time_tests.py"></a>time_tests.py
-Using time, I once again imported the parking_garage module and checked for the time it took in terms of seconds for parking_garage() to run in terms of seconds.
+Using time, I once again imported the parking_garage module and checked for the time it took in terms of seconds for parking_garage() to run in terms of seconds. Within check_time_park_vehicle(), you will notice garage = parking_garage.Garage(2, 1, 1, 5). Once again, this is an instance of the Garage class that we are going to test on. 
+
+To Run: 
+
+cd to the challange directory and type and enter 'python time_tests.py'
+
+Ouput to terminal: 
+
+--- 4.05311584473e-06 seconds ---
 
 
 #### <a name="setup"></a>Setup
