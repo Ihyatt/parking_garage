@@ -34,7 +34,7 @@ Create an instance of of the Garage, ex. lot = Garage(2, 2, 2 , 5). Then add veh
 	print lot.park_vehicle("motorcycle")
 	print lot.park_vehicle("car")
 
-To run, while in the challenge directory and type and enter 'python parking_garage.py'
+While in the challenge directory, type and enter 'python parking_garage.py'
 
 Output to terminal: 
 
@@ -55,7 +55,7 @@ Output to terminal:
 Using unittest, I imported the parking_garage module and tested for the success and failures of my code looking specifically at the only public method, park_vehicle(). Within setUp(), you will notice self.test = parking_garage.Garage(2, 1, 1, 5). This is simply an instance of the Garage class that we are going to test on. 
 
 To Run:
-cd to the challange directory and type and enter 'python general_tests.py'
+cd to the challange directory, type and enter 'python general_tests.py'
 
 Output to terminal: 
 
@@ -70,7 +70,7 @@ Using time, I once again imported the parking_garage module and checked for the 
 
 To Run: 
 
-cd to the challange directory and type and enter 'python time_tests.py'
+cd to the challange directory, type and enter 'python time_tests.py'
 
 Ouput to terminal: 
 
