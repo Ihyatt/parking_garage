@@ -1,6 +1,7 @@
 
 class Garage: 
 	def __init__(self, rows, moto_spots, comp_spots, large_spots):
+		#creation of parking garage
 		self.rows = rows
 		self.open_moto_spots = self.rows * moto_spots
 		self.open_comp_spots = self.rows * comp_spots
@@ -10,13 +11,14 @@ class Garage:
 		self.spaces_taken = 0 
 		self.garage = {}
 
-		#data structure reperesentation of the Garage
+		#data structure reperesentation of the garage
 		for i in range(self.rows):
 			self.garage[i] = [moto_spots, comp_spots, large_spots]
 
 
 	def park_vehicle(self, vehicle):
 		#Public method to be called to park vehicle
+
 		if self.capacity == self.spaces_taken:
 			return vehicle + " cannot be parked in this garage."
 
@@ -35,7 +37,6 @@ class Garage:
 		if self.open_moto_spots == 0:
 			return self.__find_comp_spots(vehicle)
 
-
 		parked = False
 		for i in range(self.rows):
 			if self.garage[i][0] > 0:
@@ -44,6 +45,7 @@ class Garage:
 				self.open_moto_spots -= 1
 				parked = True
 				return vehicle + " has been parked."
+
 		if parked == False:
 			return self.__find_comp_spots(vehicle)
 
@@ -60,6 +62,7 @@ class Garage:
 				self.open_comp_spots -= 1
 				parked = True
 				return vehicle + " has been parked."
+				
 		if parked == False:
 			return self.__find_large_spots(vehicle)
 
